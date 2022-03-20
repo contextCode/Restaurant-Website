@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap");
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  letter-spacing: 1px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+==========================================
+   VARIABLES SECTION
+==========================================
+*/
+:root {
+  --green0: #d8f3dcff;
+  --green1: #b7e4c7ff;
+  --green2: #95d5b2ff;
+  --green3: #74c69dff;
+  --green4: #52b788ff;
+  --green5: #40916cff;
+  --green6: #2d6a4fff;
+  --green7: #1b4332ff;
+  --green8: #081c15ff;
+  --font1: "Oswald", sans-serif;
+  --font2: "Lato", sans-serif;
+}
+body {
+  font-family: var(--font1);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  font-family: var(--font1);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.8rem !important;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  background-color: red;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--font2);
+  line-height: 1.75rem;
+  letter-spacing: 1.3px;
+  font-size: 1.2rem;
+}
+
+.main-btn {
+  padding: 0.5rem 1.8rem;
+  color: #fff;
+  background-color: var(--green6);
+  font-family: var(--font2);
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 10px;
+  border: none;
+}
+.main-btn:hover {
+  letter-spacing: 1px;
+}
+.a-btn {
+  margin-top: 2rem;
+}
+.a-btn a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--green6);
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.3s;
+}
+.a-btn a:hover {
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+/*
+==========================================
+   HEADER DESIGN
+==========================================
+*/
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 0.6rem;
+  transition: all 200ms linear;
+}
+
+.nav-link {
+  font-family: var(--font2);
+  padding: 0.5rem 1.8rem;
+  color: #fff !important;
+  text-transform: capitalize;
+  background-color: var(--green6);
+  font-size: 1.3em !important;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.navigation-wrap .main-btn {
+  padding: 0.5rem 1.5rem;
+  box-shadow: none;
+  margin-left: 0.5rem;
+}
+
+.logo img {
+  width: 120px;
+  padding-top: 5px;
+  margin-left: 1.5rem;
+  border-radius: 50%;
+}
+/*
+==========================================
+   TOP-BANNER DESIGN
+==========================================
+*/
+.top-banner {
+  width: 100%;
+  background: url(/images/banner1.jpg) no-repeat center;
+  background-size: cover;
+  padding: 16rem 0 9rem;
+}
+.hero-header {
+  color: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+  padding-left: 5 0px;
+}
+
+/* OVERLAY COLOR */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  mix-blend-mode: overlay;
+}
+/*
+==========================================
+   ABOUT DESIGN
+==========================================
+*/
+.about-section {
+  background: black;
+  color: white;
+}
+
+.about-section .card,
+.about-section .card img {
+  border-radius: 0.5rem;
+}
+
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+
+/*
+==========================================
+   FOOD TYPE DESIGN 
+==========================================
+*/
+.example {
+  padding-top: 3rem;
+}
+
+.example ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 29px;
+  position: relative;
+  margin-left: 28px;
+}
+
+/*
+==========================================
+   MENU DESIGN 
+==========================================
+*/
+.menu {
+  background-color: black;
+  color: white;
+}
+
+.menu .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9rem;
+}
+
+.menu .card img {
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.menu .card span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+}
+
+.menu .card span del {
+  color: rgb(163, 163, 163);
+  margin-left: 0.5rem;
+}
+
+/*
+==========================================
+   FOOTER DESIGN
+==========================================
+*/
+.footer {
+  background: black;
+}
+
+.footer .footer-link {
+  font-size: 1rem;
+  color: var(--white-color);
+  padding: 0 2rem;
+}
+
+.footer a i {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  padding: 0 1rem;
+}
+
+/*
+==========================================
+   RESPONSIVE DESIGN
+==========================================
+*/
+@media (max-width: 970px) {
+  .navigation-wrap .navbar-brand img {
+    height: 4rem;
+  }
+
+  .navigation-wrap {
+    text-align: center;
+    background-color: var(--white-color);
+  }
+
+  .navigation-wrap .nav-link {
+    line-height: 2rem;
+  }
+
+  /* Banner Design */
+  .top-banner {
+    padding: 9rem 0 9rem;
+  }
+}
+
+/*
+==========================================
+   TESTIMONIAL DESIGN
+==========================================
+*/
+
+.testimonial-main {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+
+.testimonial-main h1 {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+}
+
+.testimonial {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.testimonial-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.testimonial-image img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.testimonial-row {
+  display: flex;
+  width: 3200px;
+  transition: 0.5s;
+}
+
+.testimonial-col {
+  width: 800px;
+  height: 300px;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.testimonial-text {
+  background: #2d3a59;
+  width: 520px;
+  height: 270px;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  color: #d3d4d6;
+  padding: 45px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.testimonial-text p {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(196, 194, 71);
+  margin-top: -30px;
+}
+
+.testimonial-text h2 {
+  margin: 35px 0 5px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.testimonial-container {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial-indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+}
+
+.btn {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  border-radius: 15px;
+  background: green;
+  cursor: pointer;
+  margin-top: -80px;
+}
+
+.active {
+  width: 45px;
+}
+
+/* TABS SECTION STYLING */
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+.mytabs label {
+  font-family: var(--font1);
+  font-size: 1.8rem;
+  padding: 25px;
+  background: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  order: 1;
+  display: none;
+  background-color: black;
+  color: white;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+  background-color: var(--green6);
+  color: #fff;
+}
+.title {
+  padding: 15px;
+  text-transform: capitalize;
+  font-family: var(--font2);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.title span {
+  margin-left: 0.5em;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+/*
+==========================================
+   DARK MODE DESIGN
+==========================================
+*/
+
+button {
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 5px;
+  float: right;
+  margin-bottom: -100px;
+  background-color: var(--primary-color);
+  color: white;
+  margin-left: 10px;
+  height: 50px;
+}
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+/* LANDING PAGE SCROLL INIMATION */
